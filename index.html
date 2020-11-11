@@ -23,28 +23,33 @@
 <body>
   <div class="main-content">
     <div class="action-container">
-        <ul>
-          <li><img src="/images/logo.svg"
-                 alt="Fylo logo" id="logo"></li><br>
-          <li><button type="menu"><img src="/images/icon-document.svg"
-                   alt="Document"></button></li>
-          <li><button type="menu"><img src="/images/icon-folder.svg"
-                   alt="Folder"></button></li>
-          <li><button type="menu"><img src="/images/icon-upload.svg"
-                   alt="Upload"></button></li>
-          </ul>
+      <div id="logo"><img src="/images/logo.svg"
+             alt="Fylo logo"
+             id="logo"></div>
+      <ul>
+        <li><button type="menu"><img src="/images/icon-document.svg"
+                 alt="Document"
+                 class="action-icon"></button></li>
+        <li><button type="menu"><img src="/images/icon-folder.svg"
+                 alt="Folder"
+                 class="action-icon"></button></li>
+        <li><button type="menu"><img src="/images/icon-upload.svg"
+                 alt="Upload"
+                 class="action-icon"></button></li>
+      </ul>
     </div>
     <div class="usage-container">
-      <h4>You’ve used 815 GB of your storage</h4>
-
-      <div>185 GB Left</div>
-
-      <div>0 GB
-        1000 GB
+       <div class="usage-content">
+         <p>You’ve used 815 GB of your storage</p>
+        <div id="progress-area">
+          <progress id="storage" max="1000" value="815"></progress><br>
+        <span id="gb-1">0 GB</span>
+        <span id="gb-2">1000 GB</span></div>
+          <br>
+        <div id="storage-label"><p><span id="space-tag">185</span>GB LEFT</p></div>
       </div>
-
     </div>
-    
+
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
@@ -53,4 +58,5 @@
        target="_blank">Dameon L Wilson</a>.
   </div>
 </body>
+
 </html>
