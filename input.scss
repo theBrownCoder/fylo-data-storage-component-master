@@ -26,9 +26,12 @@ body {
 }
 
 body {
+    font-family: $main-font;
+    font-size: $main-font-size;
+    font-weight: 400;
     box-sizing: border-box;
     background-color: $very-dark-blue;
-    // background-image: url(/images/bg-desktop.png);
+    background-image: url(/images/bg-desktop.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom;
@@ -50,11 +53,15 @@ ul {
 
     list-style-type: none;
 }
-
+p{
+    color: $grayish-blue;
+    font-weight: 700;
+}
 .action-container {
-    margin: 0 auto;
+    margin-top: 200px;
+    // margin: 0 auto;
     border-radius: 15px 100px 15px 15px;
-    min-width: 250px;
+    min-width: 300px;
     max-width: 500px;
     height: 250px;
     background-color: $dark-blue;
@@ -82,20 +89,64 @@ ul {
     height: 200px;
     background-color: $dark-blue;
 }
+.usage-container p {
+    color: $pale-blue;
+}
+.usage-content {
+   margin-top: 200px;
+}
+#gb-1 {
+    float: left;
+}
+#gb-2 {
+    float: right;
+}
+#progress-area {
+    color: $pale-blue;
+    font-weight: 400;
+}
+#progress-area span {
+    opacity: 70%;
+}
+#space-tag{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+#storage {
+    min-width: 200px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: $accent-color;
+}
+#storage-label {
+    width: 150px;
+    height: 50px;
+    background-color: $pale-blue;
+    text-align: center;
+}
+
+
+
 
 @media screen and (max-width: 375px) {
     body {
         background-image: url("/images/bg-mobile.png");
+        background-size: cover;
     }
-
+    
     button {
         margin-top: 10%;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 35px;
         border: none;
         border-radius: 20%;
         background-color: $very-dark-blue;
         padding: 0 auto;
+    }
+    .action-icon {
+        width: 18px;
+        height: 18px;
     }
     #logo {
         margin-top: 15%;
@@ -111,7 +162,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     body {
         background-image: url("/images/bg-desktop.png");
     }

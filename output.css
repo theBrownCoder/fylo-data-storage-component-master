@@ -5,8 +5,12 @@ body {
 }
 
 body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   box-sizing: border-box;
   background-color: #0c122c;
+  background-image: url(/images/bg-desktop.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
@@ -28,10 +32,15 @@ ul {
   list-style-type: none;
 }
 
+p {
+  color: #848794;
+  font-weight: 700;
+}
+
 .action-container {
-  margin: 0 auto;
+  margin-top: 200px;
   border-radius: 15px 100px 15px 15px;
-  min-width: 250px;
+  min-width: 300px;
   max-width: 500px;
   height: 250px;
   background-color: #1d2c67;
@@ -59,19 +68,70 @@ ul {
   background-color: #1d2c67;
 }
 
+.usage-container p {
+  color: #dddbff;
+}
+
+.usage-content {
+  margin-top: 200px;
+}
+
+#gb-1 {
+  float: left;
+}
+
+#gb-2 {
+  float: right;
+}
+
+#progress-area {
+  color: #dddbff;
+  font-weight: 400;
+}
+
+#progress-area span {
+  opacity: 70%;
+}
+
+#space-tag {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+#storage {
+  min-width: 200px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #3e52a3;
+}
+
+#storage-label {
+  width: 150px;
+  height: 50px;
+  background-color: #dddbff;
+  text-align: center;
+}
+
 @media screen and (max-width: 375px) {
   body {
     background-image: url("/images/bg-mobile.png");
+    background-size: cover;
   }
 
   button {
     margin-top: 10%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 35px;
     border: none;
     border-radius: 20%;
     background-color: #0c122c;
     padding: 0 auto;
+  }
+
+  .action-icon {
+    width: 18px;
+    height: 18px;
   }
 
   #logo {
@@ -88,7 +148,7 @@ ul {
     padding-right: 0;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   body {
     background-image: url("/images/bg-desktop.png");
   }
