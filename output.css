@@ -117,6 +117,7 @@ p {
   body {
     background-image: url("/images/bg-mobile.png");
     background-size: cover;
+    background-color: #0c122c;
   }
 
   button {
