@@ -23,9 +23,10 @@
 <body>
   <div class="main-content">
     <div class="action-container">
-      <div id="logo"><img src="/images/logo.svg"
+      <div><img src="/images/logo.svg"
              alt="Fylo logo"
-             id="logo"></div>
+             id="logo">
+      </div>
       <ul>
         <li><button type="menu"><img src="/images/icon-document.svg"
                  alt="Document"
@@ -39,14 +40,18 @@
       </ul>
     </div>
     <div class="usage-container">
-       <div class="usage-content">
-         <p>You’ve used 815 GB of your storage</p>
-        <div id="progress-area">
-          <progress id="storage" max="1000" value="815"></progress><br>
-        <span id="gb-1">0 GB</span>
-        <span id="gb-2">1000 GB</span></div>
-          <br>
-        <div id="storage-label"><p><span id="space-tag">185</span>GB LEFT</p></div>
+      <div class="usage-content">
+        <p id="usage-remaining">You’ve used 815 GB of your storage</p>
+        <div id="usage-progress-area">
+          <progress id="usage-storage"
+                    max="1000"
+                    value="815"></progress><br>
+          <span id="gb-1">0 GB</span>
+          <span id="gb-2">1000 GB</span></div>
+        <br>
+        <div id="usage-storage-label">
+          <p><span id="usage-space-tag">185</span>GB LEFT</p>
+        </div>
       </div>
     </div>
 

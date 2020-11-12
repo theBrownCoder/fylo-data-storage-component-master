@@ -99,25 +99,25 @@ p{
 #gb-2 {
     float: right;
 }
-#progress-area {
+#usage-progress-area {
     color: $pale-blue;
     font-weight: 400;
 }
-#progress-area span {
+#usage-progress-area span {
     opacity: 70%;
 }
-#space-tag{
+#usage-space-tag{
     font-size: 40px;
     font-weight: 700;
     color: #000;
 }
-#storage {
+#usage-storage {
     min-width: 200px;
     height: 15px;
     border-radius: 10px;
     background-color: $accent-color;
 }
-#storage-label {
+#usage-storage-label {
     width: 150px;
     height: 50px;
     border-radius: 10px;
@@ -161,23 +161,28 @@ p{
     
     #logo {
         margin-top: 15%;
-        margin-left: 8%;
+        margin-left: 15%;
     }
     .main-content {
         margin: 15% 5%;
     }
-    #storage-label {
+    #usage-storage-label {
         margin: auto;
         width: 170px;
         height: 65px;
         background-color: $pale-blue;
         text-align: center;
-        // position: relative;
-        // top: 70px;
-        // left: 90px;
+        
     }
     .usage-container {
         height: 175px;
+    }
+    .usage-content {
+        width: 100%;
+        text-align: center;
+    }
+    #usage-remaining {
+        margin-top: 10%;
     }
     
     
